@@ -1,0 +1,34 @@
+{
+  "name": "wait-for-all-the-things",
+  "version": "1.0.0",
+  "main": "dist/wait-for-all-the-things.cjs.js",
+  "module": "dist/wait-for-all-the-things.esm.js",
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "test": "ava",
+    "postinstall": "preconstruct dev",
+    "prepublishOnly": "preconstruct build"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-typescript": "^7.3.3",
+    "ava": "^1.4.1",
+    "preconstruct": "^0.0.70",
+    "typescript": "^3.4.5"
+  },
+  "ava": {
+    "babel": {
+      "extensions": [
+        "ts"
+      ]
+    }
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4"
+  }
+}
