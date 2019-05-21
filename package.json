@@ -4,6 +4,7 @@
   "main": "dist/wait-for-all-the-things.cjs.js",
   "module": "dist/wait-for-all-the-things.esm.js",
   "license": "MIT",
+  "repository": "https://github.com/mitchellhamilton/wait-for-all-the-things",
   "files": [
     "src",
     "dist"
