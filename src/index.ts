@@ -1,4 +1,4 @@
-export class Waiter<Value> extends Promise<Value> {
+export class Waiter extends Promise<void> {
   constructor(count: number) {
     let current = 0;
     let resolve: () => void;
