@@ -1,10 +1,10 @@
 import test from "ava";
-import { createWaiter } from ".";
+import { Waiter } from ".";
 
 let wait = (time: number) => new Promise(resolve => setTimeout(resolve, time));
 
 test("it works", async t => {
-  let waiter = createWaiter(2);
+  let waiter = new Waiter(2);
 
   let ops: Array<string> = [];
 

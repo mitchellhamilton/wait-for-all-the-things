@@ -1,18 +1,17 @@
-class WaiterPromise<Value> extends Promise<Value> {
-  done() {}
-}
+export class Waiter<Value> extends Promise<Value> {
+  constructor(count: number) {
+    let current = 0;
+    let resolve: () => void;
 
-export let createWaiter = (count: number) => {
-  let current = 0;
-  let resolve: () => void;
-  let promise = new WaiterPromise(_resolve => {
-    resolve = _resolve;
-  });
-  promise.done = () => {
-    current++;
-    if (current === count) {
-      resolve();
-    }
-  };
-  return promise;
-};
+    super(_resolve => {
+      resolve = _resolve;
+    });
+    this.done = () => {
+      current++;
+      if (current === count) {
+        resolve();
+      }
+    };
+  }
+  done: () => void;
+}
