@@ -3231,10 +3231,10 @@ posix-character-classes@^0.1.0:
   resolved "https://registry.yarnpkg.com/posix-character-classes/-/posix-character-classes-0.1.1.tgz#01eac0fe3b5af71a2a6c02feabb8c1fef7e00eab"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
 
-preconstruct@^0.0.71:
-  version "0.0.71"
-  resolved "https://registry.yarnpkg.com/preconstruct/-/preconstruct-0.0.71.tgz#73d0b4160a0095ad0a4f805533f61f716d4ee4e8"
-  integrity sha512-ehNfNFPQ48MZsVrcWVrrNW44S1W4xybzn+9RzFoDvbGJcwxEwmOEoeNUzKIzzObSGiL+nC1Izd1fm/BFBHkI9g==
+preconstruct@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/preconstruct/-/preconstruct-0.0.72.tgz#7b5789aecc4d60718a8b258ecb4cf24105c0dc20"
+  integrity sha512-wRXipDsICc0yM7RqjtQMddxK/Ds2sIPQtucsN3UvoeoP1PqX8KB2gIS6vvnDy8LBjWycoQfvXq9WGmHmv7GUkw==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     "@babel/core" "^7.1.2"
