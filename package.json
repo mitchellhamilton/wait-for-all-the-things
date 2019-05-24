@@ -1,6 +1,6 @@
 {
   "name": "wait-for-all-the-things",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "main": "dist/wait-for-all-the-things.cjs.js",
   "module": "dist/wait-for-all-the-things.esm.js",
   "license": "MIT",
