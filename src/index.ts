@@ -1,17 +1,21 @@
-export class Waiter extends Promise<void> {
+declare class WaiterInterface extends Promise<void> {
+  constructor(count: number);
+  done(): void;
+}
+
+export let Waiter: WaiterInterface = class Waiter {
   constructor(count: number) {
     let current = 0;
     let resolve: () => void;
-
-    super(_resolve => {
+    let promise = new Promise(_resolve => {
       resolve = _resolve;
     });
-    this.done = () => {
+    (promise as any).done = () => {
       current++;
       if (current === count) {
         resolve();
       }
     };
+    return promise;
   }
-  done: () => void;
-}
+} as any;
