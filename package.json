@@ -10,8 +10,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "ava",
-    "postinstall": "preconstruct dev",
+    "test": "preconstruct dev && ava",
     "prepublishOnly": "preconstruct build"
   },
   "devDependencies": {
@@ -19,7 +18,7 @@
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-typescript": "^7.3.3",
     "ava": "^1.4.1",
-    "preconstruct": "^0.0.72",
+    "preconstruct": "^0.0.73",
     "typescript": "^3.4.5"
   },
   "ava": {
