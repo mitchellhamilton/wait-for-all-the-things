@@ -1,0 +1,9 @@
+{
+  "releases": [
+    {
+      "name": "wait-for-all-the-things",
+      "type": "major"
+    }
+  ],
+  "dependents": []
+}
